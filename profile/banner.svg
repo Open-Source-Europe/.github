@@ -1,0 +1,75 @@
+<svg width="1200" height="240" viewBox="0 0 1200 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Brand gradient: 135deg teal → cyan → gold → orange -->
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="1200" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="10%" stop-color="#419EBD"/>
+      <stop offset="40%" stop-color="#9FE7F5"/>
+      <stop offset="75%" stop-color="#F7AD1A"/>
+      <stop offset="100%" stop-color="#F27F0C"/>
+    </linearGradient>
+
+    <!-- Dot grid gradient positioned over dot area -->
+    <linearGradient id="dotGrad" x1="630" y1="20" x2="1180" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#419EBD"/>
+      <stop offset="38%"  stop-color="#9FE7F5"/>
+      <stop offset="75%"  stop-color="#F7AD1A"/>
+      <stop offset="100%" stop-color="#F27F0C"/>
+    </linearGradient>
+
+    <!-- Fade mask: dots fade in from left edge -->
+    <linearGradient id="fadeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="white" stop-opacity="0"/>
+      <stop offset="55%"  stop-color="white" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0.55"/>
+    </linearGradient>
+    <mask id="dotFade">
+      <rect x="610" y="0" width="590" height="240" fill="url(#fadeGrad)"/>
+    </mask>
+
+    <!-- Clip path: 15×6 dot grid on right side -->
+    <clipPath id="dots">
+      <circle cx="660" cy="30" r="3.5"/><circle cx="695" cy="30" r="3.5"/><circle cx="730" cy="30" r="3.5"/><circle cx="765" cy="30" r="3.5"/><circle cx="800" cy="30" r="3.5"/><circle cx="835" cy="30" r="3.5"/><circle cx="870" cy="30" r="3.5"/><circle cx="905" cy="30" r="3.5"/><circle cx="940" cy="30" r="3.5"/><circle cx="975" cy="30" r="3.5"/><circle cx="1010" cy="30" r="3.5"/><circle cx="1045" cy="30" r="3.5"/><circle cx="1080" cy="30" r="3.5"/><circle cx="1115" cy="30" r="3.5"/><circle cx="1150" cy="30" r="3.5"/>
+      <circle cx="660" cy="66" r="3.5"/><circle cx="695" cy="66" r="3.5"/><circle cx="730" cy="66" r="3.5"/><circle cx="765" cy="66" r="3.5"/><circle cx="800" cy="66" r="3.5"/><circle cx="835" cy="66" r="3.5"/><circle cx="870" cy="66" r="3.5"/><circle cx="905" cy="66" r="3.5"/><circle cx="940" cy="66" r="3.5"/><circle cx="975" cy="66" r="3.5"/><circle cx="1010" cy="66" r="3.5"/><circle cx="1045" cy="66" r="3.5"/><circle cx="1080" cy="66" r="3.5"/><circle cx="1115" cy="66" r="3.5"/><circle cx="1150" cy="66" r="3.5"/>
+      <circle cx="660" cy="102" r="3.5"/><circle cx="695" cy="102" r="3.5"/><circle cx="730" cy="102" r="3.5"/><circle cx="765" cy="102" r="3.5"/><circle cx="800" cy="102" r="3.5"/><circle cx="835" cy="102" r="3.5"/><circle cx="870" cy="102" r="3.5"/><circle cx="905" cy="102" r="3.5"/><circle cx="940" cy="102" r="3.5"/><circle cx="975" cy="102" r="3.5"/><circle cx="1010" cy="102" r="3.5"/><circle cx="1045" cy="102" r="3.5"/><circle cx="1080" cy="102" r="3.5"/><circle cx="1115" cy="102" r="3.5"/><circle cx="1150" cy="102" r="3.5"/>
+      <circle cx="660" cy="138" r="3.5"/><circle cx="695" cy="138" r="3.5"/><circle cx="730" cy="138" r="3.5"/><circle cx="765" cy="138" r="3.5"/><circle cx="800" cy="138" r="3.5"/><circle cx="835" cy="138" r="3.5"/><circle cx="870" cy="138" r="3.5"/><circle cx="905" cy="138" r="3.5"/><circle cx="940" cy="138" r="3.5"/><circle cx="975" cy="138" r="3.5"/><circle cx="1010" cy="138" r="3.5"/><circle cx="1045" cy="138" r="3.5"/><circle cx="1080" cy="138" r="3.5"/><circle cx="1115" cy="138" r="3.5"/><circle cx="1150" cy="138" r="3.5"/>
+      <circle cx="660" cy="174" r="3.5"/><circle cx="695" cy="174" r="3.5"/><circle cx="730" cy="174" r="3.5"/><circle cx="765" cy="174" r="3.5"/><circle cx="800" cy="174" r="3.5"/><circle cx="835" cy="174" r="3.5"/><circle cx="870" cy="174" r="3.5"/><circle cx="905" cy="174" r="3.5"/><circle cx="940" cy="174" r="3.5"/><circle cx="975" cy="174" r="3.5"/><circle cx="1010" cy="174" r="3.5"/><circle cx="1045" cy="174" r="3.5"/><circle cx="1080" cy="174" r="3.5"/><circle cx="1115" cy="174" r="3.5"/><circle cx="1150" cy="174" r="3.5"/>
+      <circle cx="660" cy="210" r="3.5"/><circle cx="695" cy="210" r="3.5"/><circle cx="730" cy="210" r="3.5"/><circle cx="765" cy="210" r="3.5"/><circle cx="800" cy="210" r="3.5"/><circle cx="835" cy="210" r="3.5"/><circle cx="870" cy="210" r="3.5"/><circle cx="905" cy="210" r="3.5"/><circle cx="940" cy="210" r="3.5"/><circle cx="975" cy="210" r="3.5"/><circle cx="1010" cy="210" r="3.5"/><circle cx="1045" cy="210" r="3.5"/><circle cx="1080" cy="210" r="3.5"/><circle cx="1115" cy="210" r="3.5"/><circle cx="1150" cy="210" r="3.5"/>
+    </clipPath>
+
+    <!-- Blur filters -->
+    <filter id="blur-md" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="55"/>
+    </filter>
+    <filter id="blur-lg" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="85"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="240" fill="#0A242B"/>
+
+  <!-- Ambient blurred circles (website hero effect) -->
+  <circle cx="60"   cy="130" r="150" fill="#419EBD" opacity="0.20" filter="url(#blur-lg)"/>
+  <circle cx="1160" cy="30"  r="130" fill="#F7AD1A" opacity="0.18" filter="url(#blur-md)"/>
+  <circle cx="870"  cy="230" r="110" fill="#9FE7F5" opacity="0.13" filter="url(#blur-md)"/>
+
+  <!-- Top gradient stripe -->
+  <rect x="0" y="0" width="1200" height="3" fill="url(#brandGrad)"/>
+
+  <!-- Dot grid: gradient-coloured, fading in from left -->
+  <g mask="url(#dotFade)">
+    <rect x="610" y="0" width="590" height="240" fill="url(#dotGrad)" clip-path="url(#dots)"/>
+  </g>
+
+  <!-- // prefix in brand teal -->
+  <text x="70" y="108" fill="#9FE7F5" font-family="Manrope, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="54" font-weight="800" dominant-baseline="middle">//</text>
+
+  <!-- Title -->
+  <text x="152" y="108" fill="#FFFFFF" font-family="Manrope, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="54" font-weight="800" dominant-baseline="middle">Open Source Europe</text>
+
+  <!-- Tagline -->
+  <text x="70" y="162" fill="#FFFFFFB3" font-family="Manrope, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="21" font-weight="400" dominant-baseline="middle">We take care of the admin. You take care of the code.</text>
+
+  <!-- Bottom gradient stripe -->
+  <rect x="0" y="237" width="1200" height="3" fill="url(#brandGrad)"/>
+</svg>
